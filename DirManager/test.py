@@ -1,4 +1,14 @@
-import DirManager.main
+from main import *
+
+DIR = ''
+DST = ''
+
+SRC = ''
+BACKUPS_DIR = ''
 
 while True:
-    print("SSSSSSSSSSSSSSSSSSSS")
+    backup(SRC, BACKUPS_DIR)
+
+# DirManager(DIR).relocation('.exe', DST)
+
+# DirManager(DIR).delete()
