@@ -1,14 +1,16 @@
 from main import *
+import time
+DIR = 'S:\Downloads'
+DST = 'S:\Images'
 
-DIR = ''
-DST = ''
+SRC = 'S:\ProgrammingProjects\Python\DirManager\\backup_obj'
+BACKUPS_DIR = 'S:\ProgrammingProjects\Python\DirManager\\backups'
 
-SRC = ''
-BACKUPS_DIR = ''
+# while True:
+#    backup(SRC, BACKUPS_DIR, 3600)
 
-while True:
-    backup(SRC, BACKUPS_DIR)
+DirManager(DIR).relocation(['.png', '.jpg', '.jpeg'], DST)
 
-# DirManager(DIR).relocation('.exe', DST)
+# DirManager(DIR).delete('.exe')
 
-# DirManager(DIR).delete()
+input()
